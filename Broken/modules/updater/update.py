@@ -90,7 +90,7 @@ requirements_path = path.join(
 
 
 def restart():
-    os.execvp(sys.executable, [sys.executable, "-m", "Zaid"])
+    os.execvp(sys.executable, [sys.executable, "-m", "Broken"])
 
 async def is_heroku():
     return "heroku" in socket.getfqdn()
@@ -254,7 +254,7 @@ async def upstream(client: Client, message: Message):
         await status.edit(
             "`Userbot Successfully Updated! Userbot can be used again.`",
         )
-        args = [sys.executable, "-m", "Zaid"]
+        args = [sys.executable, "-m", "Broken"]
         execle(sys.executable, *args, environ)
         return
 
@@ -319,7 +319,7 @@ async def updatees(client: Client, message: Message):
 add_command_help(
     "update",
     [
-        ["update", "To see a list of the latest updates from Zaid-Userbot."],
+        ["update", "To see a list of the latest updates from BrokenxUserbot."],
         ["update deploy", "To update userbot."],
     ],
 )
